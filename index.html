@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Select</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <img id="main" src="i1.jpg" alt="Image" width="470px">
+    </div>
+    <div class="items">
+        <img onclick="img1()" src="i1.jpg" alt="Image 1" width="120px">
+        <img onclick="img2()" src="i2.jpg" alt="Image 1" width="120px">
+        <img onclick="img3()" src="i3.jpg" alt="Image 1" width="120px">
+    </div>
+    <script>
+        function img1(){
+            document.getElementById("main").src = "i1.jpg";
+        }
+        function img2(){
+            document.getElementById("main").src = "i2.jpg";
+        }
+        function img3(){
+            document.getElementById("main").src = "i3.jpg";
+        }
+    </script>
+</body>
+</html>
